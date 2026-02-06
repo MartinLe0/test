@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookbook | VOID</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-['Inter'] overflow-x-hidden">
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-['Oswald'] tracking-tighter italic">VOID_</a>
+            <div class="hidden md:flex space-x-8 uppercase text-xs tracking-widest">
+                <a href="index.html" class="nav-link hover:text-[#CCFF00]">Accueil</a>
+                <a href="shop.html" class="nav-link hover:text-[#CCFF00]">Boutique</a>
+                <a href="lookbook.html" class="nav-link text-[#CCFF00]">Lookbook</a>
+            </div>
+            <a href="cart.html"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a>
+        </div>
+    </nav>
+
+    <main class="snap-y snap-mandatory h-screen overflow-y-scroll">
+        <!-- Slide 1 -->
+        <section class="snap-start h-screen w-full relative flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80" class="absolute inset-0 w-full h-full object-cover opacity-70">
+            <div class="relative z-10 text-center">
+                <h2 class="text-8xl font-['Oswald'] italic">01. DYSTOPIA</h2>
+                <p class="tracking-[0.5em] text-xs uppercase mt-4">Spring/Summer 2024</p>
+            </div>
+        </section>
+        <!-- Slide 2 -->
+        <section class="snap-start h-screen w-full relative flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1529139572177-393fbf05551c?auto=format&fit=crop&q=80" class="absolute inset-0 w-full h-full object-cover opacity-70">
+            <div class="relative z-10 text-center">
+                <h2 class="text-8xl font-['Oswald'] italic">02. NOISE</h2>
+                <p class="tracking-[0.5em] text-xs uppercase mt-4">The Urban Void</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
