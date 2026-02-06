@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | VOID</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-black font-['Inter']">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 h-screen">
+        <div class="p-12 md:p-24">
+            <a href="index.html" class="text-2xl font-['Oswald'] italic block mb-12 text-black">VOID_</a>
+            
+            <form class="space-y-6">
+                <h2 class="text-xl font-bold uppercase mb-8">Shipping Details</h2>
+                <input type="email" placeholder="Email Address" class="w-full border-b border-black py-3 focus:outline-none">
+                <div class="grid grid-cols-2 gap-4">
+                    <input type="text" placeholder="First Name" class="w-full border-b border-black py-3 focus:outline-none">
+                    <input type="text" placeholder="Last Name" class="w-full border-b border-black py-3 focus:outline-none">
+                </div>
+                <input type="text" placeholder="Address" class="w-full border-b border-black py-3 focus:outline-none">
+                
+                <h2 class="text-xl font-bold uppercase mt-12 mb-8">Payment</h2>
+                <div class="bg-zinc-100 p-4 mb-8">
+                    <p class="text-xs text-zinc-500 uppercase">All transactions are secure and encrypted.</p>
+                </div>
+                <button type="button" onclick="alert('Order Confirmed.')" class="w-full bg-black text-white py-5 font-bold uppercase hover:bg-zinc-800 transition">Pay Now</button>
+            </form>
+        </div>
+
+        <div class="bg-zinc-50 p-12 md:p-24">
+            <h2 class="text-xl font-bold uppercase mb-8">Order Summary</h2>
+            <div class="flex items-center space-x-4 mb-6">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&q=80" class="w-16 h-20 object-cover border">
+                    <span class="absolute -top-2 -right-2 bg-black text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full">1</span>
+                </div>
+                <div class="flex-1">
+                    <p class="font-bold text-sm uppercase">Phantom Hoodie</p>
+                    <p class="text-xs text-zinc-500">Size: L</p>
+                </div>
+                <p class="font-bold">120€</p>
+            </div>
+            <div class="border-t border-zinc-200 pt-6 space-y-2">
+                <div class="flex justify-between text-sm">
+                    <span>Subtotal</span>
+                    <span>120.00€</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                    <span>Shipping</span>
+                    <span>Calculated at next step</span>
+                </div>
+                <div class="flex justify-between text-xl font-bold pt-4">
+                    <span>Total</span>
+                    <span>120.00€</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
